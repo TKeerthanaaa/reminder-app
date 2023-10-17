@@ -19,7 +19,7 @@ const Item = ({ imgUrl, name, age, id, deleteItem }) => {
       <div>
         <button
           onClick={() => clickHandler(id)}
-          className="w-10 h-10 rounded-full bg-cyan-400 flex items-center justify-center hover:cursor-pointer hover:-translate-y-1"
+          className="w-10 h-10 rounded-full bg-violet-400 flex items-center justify-center hover:cursor-pointer hover:-translate-y-1"
         >
           <BsFillTrash3Fill />
         </button>
