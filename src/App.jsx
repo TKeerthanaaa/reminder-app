@@ -1,9 +1,9 @@
-import { birds } from "./constants";
+import { birth } from "./constants";
 import { useState } from "react";
 import Item from "./components/item";
 
 const App = () => {
-  const [data, setData] = useState(birds);
+  const [data, setData] = useState(birth);
 
   const deleteItem = (id) => {
     const remainingItem = data.filter((item) => item.id !== id);
@@ -16,8 +16,8 @@ const App = () => {
 
   return (
     <main className="bg-blue-700 min-h-screen w-screen flex items-center justify-center">
-      <div className="card w-[30rem] bg-white shadow-lg rounded-xl min-h-[36rem]">
-        <h1 className="text-center text-4xl font-bold">Birthday Reminder</h1>
+      <div className="card w-[30rem] bg-white shadow-lg rounded-xl min-h-[30rem]">
+        <h1 className="text-center text-4xl font-bold">5 Birthday Today</h1>
         <ul className="flex flex-col gap-2 my-6">
           {data.map((item) => {
             const { id, name, age, imgUrl } = item;
